@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#26314A">
+<title>ปฏิทินประเพณีไทย</title>
+<meta name="description" content="ปฏิทินประเพณีและวันสำคัญไทย 20 งาน 4 ภาค พ.ศ. 2569">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2326314A'/%3E%3Cpath d='M32 8c4 10 10 14 20 18-10 4-16 8-20 18-4-10-10-14-20-18 10-4 16-8 20-18z' fill='%23E8B841'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--indigo:#26314A;--indigo2:#1B2438;--gold:#E8B841;--gold2:#C9A45C;--red:#C13019;--siam:#8A1538;--paper:#FBF6EA;--ink:#222;--mut:#6b6f7a;--card:#fff;--line:#E7DFC9;--fs:16px}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:var(--fs)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Sarabun',system-ui,sans-serif;line-height:1.6;padding-bottom:84px}
+body.big{--fs:19px}
+h1,h2,h3{font-family:'Noto Serif Thai',serif;margin:0;line-height:1.35}
+.lai{height:14px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M14 1l5 6-5 6-5-6z' fill='none' stroke='%23E8B841' stroke-width='1.3'/%3E%3Cpath d='M0 7h4M24 7h4' stroke='%23E8B841' stroke-width='1.3'/%3E%3Ccircle cx='14' cy='7' r='1.4' fill='%23E8B841'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center}
+header{background:var(--indigo);color:#fff;position:sticky;top:0;z-index:20;padding:calc(10px + env(safe-area-inset-top)) 16px 0}
+.top{display:flex;align-items:center;gap:10px;max-width:960px;margin:0 auto;padding-bottom:8px}
+.top h1{font-size:1.1rem;color:var(--gold);flex:1}
+.top small{display:block;color:#cdd3e4;font-family:'Sarabun';font-size:.72rem;font-weight:400}
+.ibtn{border:1px solid rgba(232,184,65,.6);background:transparent;color:var(--gold);border-radius:10px;padding:6px 10px;font:600 .85rem 'Sarabun';cursor:pointer}
+.ibtn.on{background:var(--gold);color:var(--indigo)}
+main{max-width:960px;margin:0 auto;padding:16px}
+.view{display:none}.view.act{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(38,49,74,.06)}
+.hero{background:linear-gradient(135deg,var(--indigo),var(--indigo2));color:#fff;border-radius:18px;padding:18px;margin-bottom:12px;border:1px solid var(--gold2);position:relative}
+.hero h2{color:var(--gold);font-size:1.25rem}
+.hero .big{font:700 2.4rem 'Noto Serif Thai';color:#fff;line-height:1}
+.chip{display:inline-block;font-size:.74rem;font-weight:600;border-radius:999px;padding:2px 10px;margin:0 6px 4px 0;background:#F1E7C8;color:#6a5313}
+.chip.r{background:#F6D9D3;color:var(--red)}.chip.b{background:#DCE2F0;color:var(--indigo)}.chip.g{background:#DDEFE3;color:#1d6b3c}
+.btn{border:0;border-radius:12px;padding:10px 14px;font:600 .95rem 'Sarabun';cursor:pointer;background:var(--indigo);color:#fff}
+.btn.gold{background:var(--gold);color:var(--indigo)}.btn.line{background:#fff;color:var(--indigo);border:1px solid var(--indigo)}
+.btn:disabled{opacity:.5}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sec-t{font:700 1.05rem 'Noto Serif Thai';color:var(--indigo);margin:16px 0 8px;display:flex;align-items:center;gap:8px}
+.sec-t:after{content:"";flex:1;height:1px;background:var(--gold2);opacity:.6}
+.list-item{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.datebox{min-width:56px;text-align:center;border-radius:12px;background:var(--indigo);color:#fff;padding:6px 4px;font-weight:700}
+.datebox b{display:block;font:700 1.35rem 'Noto Serif Thai';color:var(--gold);line-height:1.1}.datebox span{font-size:.72rem}
+.li-name{font-weight:700}
+.star{margin-left:auto;font-size:1.4rem;background:none;border:0;cursor:pointer;color:var(--gold2);padding:0 4px}
+input[type=search],select{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--line);font:inherit;background:#fff}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.pill{border:1px solid var(--indigo);background:#fff;color:var(--indigo);border-radius:999px;padding:5px 14px;font:600 .85rem 'Sarabun';cursor:pointer}
+.pill.on{background:var(--indigo);color:var(--gold)}
+nav.bottom{position:fixed;left:0;right:0;bottom:0;background:var(--indigo);display:flex;justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:30;border-top:2px solid var(--gold)}
+nav.bottom button{flex:1;background:none;border:0;color:#cdd3e4;font:600 .72rem 'Sarabun';padding:4px 0;cursor:pointer}
+nav.bottom button b{display:block;font-size:1.3rem;font-weight:400}
+nav.bottom button.on{color:var(--gold)}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cal-head h2{font-size:1.15rem}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;max-width:600px;margin:0 auto}
+.dow{text-align:center;font-weight:700;font-size:.78rem;color:var(--indigo);padding:4px 0}
+.dow:first-child{color:var(--red)}
+.day{aspect-ratio:1/1.05;max-height:84px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:3px 2px;position:relative;text-align:center;font-size:.9rem;cursor:pointer;display:flex;flex-direction:column;align-items:center}
+.day.empty{background:transparent;border:0;cursor:default}
+.day.today{outline:2px solid var(--gold);background:#FFF6D6}
+.day.sel{background:var(--indigo);color:#fff}
+.day.sun{color:var(--red)}.day.sel.sun{color:#ffd}
+.dots{display:flex;gap:3px;margin-top:auto;margin-bottom:3px;flex-wrap:wrap;justify-content:center}
+.dot{width:7px;height:7px;border-radius:50%}
+.dot.ev{background:var(--gold2)}.dot.hol{background:var(--red)}.dot.wp{background:#fff;border:2px solid var(--indigo);width:8px;height:8px}
+.day.sel .dot.wp{border-color:#fff}
+.legend{display:flex;gap:14px;font-size:.78rem;color:var(--mut);margin:8px 0;flex-wrap:wrap}
+.legend i{display:inline-block;margin-right:4px;vertical-align:middle}
+.detail-h{background:var(--indigo);color:#fff;border-radius:18px;padding:18px;border:1px solid var(--gold2);margin-bottom:12px}
+.detail-h h2{color:var(--gold);font-size:1.3rem;margin:6px 0}
+.back{background:none;border:0;color:var(--indigo);font:700 1rem 'Sarabun';cursor:pointer;padding:4px 0;margin-bottom:6px}
+details.acc{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:8px;overflow:hidden}
+details.acc summary{padding:12px 14px;font-weight:700;cursor:pointer;color:var(--indigo);list-style:none;display:flex;justify-content:space-between}
+details.acc summary:after{content:"＋";color:var(--gold2)}details.acc[open] summary:after{content:"－"}
+details.acc .bd{padding:0 14px 12px}
+ul.k{margin:0;padding-left:20px}ol.k{margin:0;padding-left:22px}
+.ok{color:#1d6b3c}.no{color:var(--red)}
+.q-opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;font:600 1rem 'Sarabun';cursor:pointer}
+.q-opt.right{background:#DDEFE3;border-color:#1d6b3c}.q-opt.wrong{background:#F6D9D3;border-color:var(--red)}
+.prog{height:8px;background:#EFE6CB;border-radius:99px;overflow:hidden;margin:8px 0}.prog i{display:block;height:100%;background:var(--gold)}
+.banner{background:#FFF3C4;border:1px solid var(--gold);border-radius:14px;padding:10px 14px;margin-bottom:12px;font-weight:600}
+.note{font-size:.8rem;color:var(--mut)}
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--indigo);color:#fff;padding:10px 18px;border-radius:99px;z-index:50;font-weight:600;opacity:0;transition:.25s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+footer{max-width:960px;margin:0 auto;padding:0 16px 16px;font-size:.78rem;color:var(--mut)}
+a{color:var(--siam)}
+@media(min-width:720px){.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="top">
+  <h1>ปฏิทินประเพณีไทย<small>วัฒนธรรมไทย 4 ภาค · พ.ศ. 2569</small></h1>
+  <button class="ibtn" id="fontBtn" aria-pressed="false" title="ตัวอักษรใหญ่">ก<sup>+</sup> ตัวใหญ่</button>
+ </div>
+ <div class="lai"></div>
+</header>
+<main>
+ <section id="v-home" class="view act"></section>
+ <section id="v-cal" class="view"></section>
+ <section id="v-list" class="view"></section>
+ <section id="v-quiz" class="view"></section>
+ <section id="v-me" class="view"></section>
+ <section id="v-detail" class="view"></section>
+</main>
+<footer>ข้อมูลรวบรวมจากหน่วยงานรัฐ ททท. และสื่อทั่วไป ปี 2569 ส่วนมารยาท การแต่งกาย และอาหารเป็นแนวปฏิบัติทั่วไป ควรตรวจกับประกาศทางการก่อนไปงานจริง · สร้างด้วย AI เพื่อการเรียนวิชา AI102</footer>
+<nav class="bottom" id="nav">
+ <button data-v="home" class="on"><b>🏠</b>หน้าแรก</button>
+ <button data-v="cal"><b>📅</b>ปฏิทิน</button>
+ <button data-v="list"><b>🏮</b>ประเพณี</button>
+ <button data-v="quiz"><b>❓</b>ควิซ</button>
+ <button data-v="me"><b>⭐</b>ของฉัน</button>
+</nav>
+<div class="toast" id="toast"></div>
+<script>
+const SRC_NOTE={gov:'วันที่ยืนยันจากหน่วยงานรัฐ/ททท.',cal:'วันที่ตามปฏิทินทั่วไป ควรตรวจซ้ำกับประกาศทางการ'};
+const EVENTS=[
+{id:'chinese-ny',name:'ตรุษจีน',region:'กลาง',prov:'กรุงเทพฯ (เยาวราช), นครสวรรค์ และทั่วประเทศ',type:'ปฏิทินจีน',s:'2026-02-15',e:'2026-02-17',when:'วันจ่าย 15 ก.พ. วันไหว้ 16 ก.พ. วันเที่ยว 17 ก.พ. (ไม่ใช่วันหยุดราชการ)',conf:'cal',
+history:'วันขึ้นปีใหม่ตามปฏิทินจันทรคติจีน ชาวไทยเชื้อสายจีนถือปฏิบัติ 3 วัน วันไหว้มีการไหว้เทพเจ้า บรรพบุรุษ และผีไม่มีญาติ เพื่อแสดงความกตัญญูและขอสิริมงคล',
+steps:['จับจ่ายของไหว้ (วันจ่าย)','ไหว้เจ้าที่ตอนเช้า','ไหว้บรรพบุรุษตอนสาย','ไหว้ผีไม่มีญาติตอนบ่าย','วันเที่ยว: อวยพรผู้ใหญ่และแจกอั่งเปา'],
+items:['ซาแซ (หมู เป็ด ไก่)','ส้ม','ขนมเข่ง ขนมเทียน','ธูปเทียน','กระดาษเงินกระดาษทอง'],
+attire:'สีแดงหรือสีสด เลี่ยงชุดดำล้วนหรือขาวล้วน',
+dos:['มอบส้มเป็นคู่','พูดคำอวยพรมงคล'],donts:['เลี่ยงคำอัปมงคล','ระวังไฟเมื่อเผากระดาษ'],
+foods:['ขนมเข่ง','ขนมเทียน','ขนมไข่'],
+src:['https://www.sanook.com/campus/945871/','https://library.wu.ac.th/content/chinesenewyear/']},
+{id:'makha',name:'วันมาฆบูชา',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันพุทธ',s:'2026-03-03',e:'2026-03-03',when:'ขึ้น 15 ค่ำ เดือน 4 (ปี 2569 เป็นอธิกมาส จึงเลื่อนจากเดือน 3)',conf:'cal',
+history:'ระลึกถึงจาตุรงคสันนิบาต คือพระอรหันต์ 1,250 รูปมาประชุมกันโดยมิได้นัดหมาย พระพุทธเจ้าทรงแสดงโอวาทปาติโมกข์ (ละชั่ว ทำดี ทำใจให้บริสุทธิ์) ในไทยเริ่มจัดพิธีสมัยรัชกาลที่ 4',
+steps:['ตักบาตรตอนเช้า','รักษาศีล','ฟังธรรม','เวียนเทียน 3 รอบตอนค่ำ'],
+items:['ดอกไม้','ธูป 3 ดอก','เทียน 1 เล่ม'],attire:'สุภาพ นิยมสีขาว',
+dos:['ทำใจให้สงบ','เวียนเทียนตามทิศทางที่วัดกำหนด'],donts:['ระวังไฟจากเทียน','งดสุรา'],foods:['อาหารตักบาตร'],
+src:['https://myhora.com/calendar/buddhist-2569.aspx','https://www.dmc.tv/article/5453']},
+{id:'phawet',name:'บุญผะเหวด (บุญมหาชาติ) ร้อยเอ็ด',region:'อีสาน',prov:'ร้อยเอ็ด',type:'ฮีตสิบสอง',s:'2026-03-06',e:'2026-03-08',when:'บุญเดือน 4 ปี 2569 จัด 6-8 มี.ค. ที่สวนสมเด็จพระศรีนครินทร์ (บึงพลาญชัย)',conf:'gov',
+history:'"ผะเหวด" มาจาก "พระเวส" คือการฟังเทศน์มหาชาติเวสสันดรชาดก 13 กัณฑ์ให้จบในวันเดียวเพื่ออานิสงส์ ร้อยเอ็ดจัดเป็นงาน "มหาทานบารมี" มีขบวนแห่ 13 กัณฑ์',
+steps:['แห่พระอุปคุต','แห่ผะเหวดเข้าเมือง','ขบวน 13 กัณฑ์','ฟังเทศน์มหาชาติ','ถวายข้าวพันก้อน'],
+items:['ข้าวพันก้อน','ธงผะเหวด','กัณฑ์เทศน์'],attire:'ผ้าไหมหรือผ้าฝ้ายอีสาน',
+dos:['ฟังเทศน์ด้วยความสำรวม','ร่วมทำบุญตามศรัทธา'],donts:['อย่าเดินผ่านหน้าขบวนแห่'],foods:['ข้าวปุ้น (ขนมจีน)'],
+src:['https://roiet.prd.go.th/th/content/category/detail/id/877/iid/477339','https://www.thairath.co.th/lifestyle/travel/2916677']},
+{id:'songkran',name:'สงกรานต์',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'สุริยคติ',s:'2026-04-13',e:'2026-04-15',when:'13-15 เม.ย. ทุกปี (มหาสงกรานต์ วันเนา วันเถลิงศก) วันที่ไม่เปลี่ยน',conf:'cal',
+history:'"สงกรานต์" แปลว่าการเคลื่อนย้าย คือดวงอาทิตย์ย้ายเข้าราศีเมษ ซึ่งแต่เดิมถือเป็นปีใหม่ไทย ใช้น้ำแสดงความกตัญญูและไมตรี ยูเนสโกขึ้นทะเบียน "สงกรานต์ในประเทศไทย" เป็นมรดกภูมิปัญญาทางวัฒนธรรมที่จับต้องไม่ได้ของมนุษยชาติเมื่อ 6 ธ.ค. 2566',
+steps:['ตักบาตรทำบุญ','สรงน้ำพระ','รดน้ำดำหัวผู้ใหญ่','ก่อเจดีย์ทราย','เล่นน้ำอย่างสร้างสรรค์'],
+items:['น้ำอบไทย','น้ำขมิ้นส้มป่อย','พานดอกไม้'],attire:'ลายดอกหรือผ้าพื้นเมือง เลือกผ้าที่ไม่โปร่งเมื่อเปียก',
+dos:['รดน้ำขอพรผู้ใหญ่ด้วยความเคารพ'],donts:['ไม่สาดน้ำใส่พระสงฆ์ ผู้ขับขี่ หรือคนที่ไม่เล่น','ไม่ใช้น้ำแข็งหรือน้ำสกปรก','ไม่เมาแล้วขับ'],foods:['ข้าวแช่','กะละแม'],
+src:['https://www.matichon.co.th/education/religious-cultural/news_4318350','https://ratchaburi.prd.go.th/th/content/category/detail/id/35/iid/291241']},
+{id:'bangfai',name:'บุญบั้งไฟ ยโสธร',region:'อีสาน',prov:'ยโสธร',type:'ฮีตสิบสอง',s:'2026-05-08',e:'2026-05-10',when:'บุญเดือน 6 ปี 2569: 8 พ.ค. บั้งไฟจอดโชว์ 9 พ.ค. วันแห่ 10 พ.ค. จุดบั้งไฟ',conf:'gov',
+history:'จุดบั้งไฟบูชาพญาแถนเพื่อขอฝนก่อนทำนา ตามตำนานพญาคันคาก (คางคก) ซึ่งรบชนะพญาแถน',
+steps:['บั้งไฟจอดโชว์','แห่บั้งไฟเอ้ รำเซิ้ง','ประกวดธิดาบั้งไฟ','จุดบั้งไฟแข่ง'],
+items:['บั้งไฟ','ผ้าพื้นเมือง','หมวกกันแดด'],attire:'ผ้าพื้นเมือง และหมวกกันแดด',
+dos:['ชมในระยะปลอดภัย','เข้าใจว่าการละเล่นเชิงเพศเป็นคติขอความอุดมสมบูรณ์'],donts:['อย่าเข้าใกล้ฐานยิง'],foods:['อาหารอีสาน (ส้มตำ ลาบ ไก่ย่าง)'],
+src:['https://www2.yasothon.go.th/yasothon-rocket-festival-tradition-2026/','https://www.thailand.go.th/event-detail/yasothon-rocket-festival-2026?hl=th']},
+{id:'plowing',name:'พระราชพิธีพืชมงคลจรดพระนังคัลแรกนาขวัญ',region:'กลาง',prov:'กรุงเทพฯ (ท้องสนามหลวง)',type:'พระราชพิธี',s:'2026-05-12',e:'2026-05-13',when:'ปี 2569 พิธีสงฆ์ 12 พ.ค. พิธีแรกนา 13 พ.ค. (หยุดเฉพาะราชการ)',conf:'gov',
+history:'เป็นการรวม 2 พิธี คือพิธีสงฆ์ทำขวัญพืชพันธุ์ กับพิธีพราหมณ์ไถหว่านเสี่ยงทาย เพื่อบำรุงขวัญเกษตรกร ปี 2569 พระยาแรกนาเสี่ยงทายได้ผ้านุ่ง 6 คืบ',
+steps:['เสี่ยงทายผ้านุ่ง','ไถหว่านเมล็ดพันธุ์','พระโคเสี่ยงทายของกิน 7 อย่าง','ประชาชนเก็บข้าวมงคล'],
+items:['เมล็ดพันธุ์ข้าว','ข้าวมงคลสำหรับเกษตรกร'],attire:'สุภาพ',
+dos:['รอให้เสร็จพิธีก่อนเก็บเมล็ดข้าว'],donts:['ไม่เข้ามณฑลพิธี'],foods:['-'],
+src:['https://www.thaipbs.or.th/news/content/505314','https://www.thairath.co.th/agriculture/agricultural-policy/2932424']},
+{id:'visakha',name:'วันวิสาขบูชา',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันพุทธ',s:'2026-05-31',e:'2026-05-31',when:'ปี 2569 อา. 31 พ.ค. (ขึ้น 15 ค่ำ เดือน 7 เพราะอธิกมาส) ชดเชย 1 มิ.ย.',conf:'gov',
+history:'ระลึกถึงการประสูติ ตรัสรู้ และปรินิพพาน สหประชาชาติรับรองเป็นวันสำคัญสากลด้วยข้อมติ A/RES/54/115 เมื่อ 15 ธ.ค. 1999',
+steps:['ตักบาตร','รักษาศีล ฟังธรรม','เวียนเทียนตอนค่ำ'],
+items:['ดอกไม้','ธูป 3 ดอก','เทียน 1 เล่ม'],attire:'สุภาพ นิยมสีขาว',
+dos:['ทำใจให้สงบ'],donts:['ระวังไฟจากเทียน','งดสุรา'],foods:['อาหารตักบาตร'],
+src:['https://www.onab.go.th/th/page/item/index/id/1','https://www.thairath.co.th/lifestyle/calendar/2934325']},
+{id:'phitakhon',name:'บุญหลวงและผีตาโขน',region:'อีสาน',prov:'เลย (ด่านซ้าย)',type:'ประเพณีพื้นบ้าน',s:'2026-06-20',e:'2026-06-22',when:'ปี 2569 จัด 20-22 มิ.ย. ที่หน้าที่ว่าการอำเภอด่านซ้ายและวัดโพนชัย',conf:'gov',
+history:'บุญหลวงรวมบุญผะเหวดกับบุญบั้งไฟ ตามตำนานผีป่าออกมาส่งเสด็จพระเวสสันดรกลับเมือง หน้ากากทำจากหวดนึ่งข้าวเหนียวและโคนก้านมะพร้าว',
+steps:['20 มิ.ย. เบิกพระอุปคุตจากแม่น้ำหมัน','21 มิ.ย. ขบวนผีตาโขน','22 มิ.ย. แห่กัณฑ์หลอนและฟังเทศน์'],
+items:['หน้ากากผีตาโขน','ชุดผ้าเย็บปะ','กระดิ่ง','ดาบไม้'],attire:'สบายๆ เหมาะกับการเดินกลางแดด',
+dos:['เคารพพิธีเจ้าพ่อกวน','ขออนุญาตก่อนถ่ายภาพใกล้ๆ'],donts:['อย่าแย่งหรือดึงอุปกรณ์ของผีตาโขน'],foods:['ข้าวเหนียว','อาหารพื้นถิ่นเลย'],
+src:['https://thai.tourismthailand.org/Articles/phi-ta-khon-2569','https://travel.kapook.com/view301394.html']},
+{id:'asalha',name:'วันอาสาฬหบูชา',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันพุทธ',s:'2026-07-29',e:'2026-07-29',when:'ปี 2569 พ. 29 ก.ค. (ขึ้น 15 ค่ำ เดือน 8 หลัง)',conf:'cal',
+history:'ระลึกถึงวันที่พระพุทธเจ้าแสดงปฐมเทศนาธัมมจักกัปปวัตตนสูตรแก่ปัญจวัคคีย์ พระอัญญาโกณฑัญญะบวชเป็นพระสงฆ์รูปแรก พระรัตนตรัยจึงครบองค์ 3',
+steps:['ทำบุญตักบาตร','ฟังธรรม','เวียนเทียน'],items:['ดอกไม้','ธูปเทียน'],attire:'สุภาพ นิยมสีขาว',
+dos:['ฟังธรรมด้วยความสำรวม'],donts:['งดสุรา'],foods:['อาหารตักบาตร'],
+src:['https://www.sanook.com/horoscope/322610/']},
+{id:'khaopansa',name:'วันเข้าพรรษา',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันพุทธ',s:'2026-07-30',e:'2026-07-30',when:'ปี 2569 พฤ. 30 ก.ค. (หยุดเฉพาะราชการ)',conf:'cal',
+history:'พระสงฆ์จำพรรษา 3 เดือนฤดูฝนตามพระวินัย ไม่เดินทางเหยียบย่ำพืชผล ฆราวาสนิยมงดเหล้าเข้าพรรษา',
+steps:['ถวายเทียนพรรษาและผ้าอาบน้ำฝน','ฟังธรรม','ตั้งใจงดอบายมุข'],items:['เทียนพรรษา','ผ้าอาบน้ำฝน'],attire:'สุภาพ',
+dos:['ตั้งใจงดเหล้า บุหรี่ ตลอด 3 เดือน'],donts:['-'],foods:['อาหารถวายพระ'],
+src:['https://www.sanook.com/horoscope/322610/','https://calendar.kapook.com/2569/holiday']},
+{id:'candle',name:'แห่เทียนพรรษา อุบลราชธานี',region:'อีสาน',prov:'อุบลราชธานี',type:'ประเพณีพื้นบ้าน',s:'2026-07-28',e:'2026-07-30',when:'ปี 2569 รวมเทียน 28 ก.ค. (ทุ่งศรีเมือง) ขบวนแห่ 29-30 ก.ค. วันไหล 31 ก.ค.-1 ส.ค.',conf:'gov',
+history:'เริ่มจากการถวายเทียนให้พระใช้ตลอดพรรษา แล้วพัฒนาเป็นต้นเทียนแกะสลักและติดพิมพ์ที่แต่ละคุ้มวัดทำร่วมกัน',
+steps:['ชมการทำเทียนในชุมชน','รวมเทียนที่ทุ่งศรีเมือง','ขบวนแห่ต้นเทียน','ประกวดต้นเทียน'],
+items:['ต้นเทียนพรรษา'],attire:'สบายๆ เหมาะกับการเดินชมกลางแจ้ง',
+dos:['ใช้จุดชมที่จัดไว้'],donts:['ไม่สัมผัสต้นเทียน'],foods:['อาหารอีสาน'],
+src:['https://www.cityub.go.th/web2029/main/pr/news2107','https://www.thansettakij.com/lifestyle/travel-shopping/664209']},
+{id:'mothers',name:'วันแม่แห่งชาติ',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันสำคัญ',s:'2026-08-12',e:'2026-08-12',when:'12 ส.ค. ทุกปี (วันหยุดราชการ)',conf:'cal',
+history:'ตรงกับวันพระราชสมภพของสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง มีดอกมะลิเป็นสัญลักษณ์',
+steps:['กราบแม่และมอบดอกมะลิ','ทำบุญตักบาตร','ร่วมกิจกรรมของชุมชน'],items:['ดอกมะลิ'],attire:'นิยมสีฟ้า',
+dos:['แสดงความกตัญญูต่อแม่'],donts:['-'],foods:['-'],
+src:['https://calendar.kapook.com/2569/holiday']},
+{id:'sart10',name:'บุญสารทเดือนสิบ',region:'ใต้',prov:'นครศรีธรรมราช',type:'ประเพณีพื้นบ้าน',s:'2026-09-28',e:'2026-10-12',when:'แรม 1-15 ค่ำ เดือน 10 งานปี 2569 จัด 28 ก.ย.-12 ต.ค. แห่หฺมฺรับ 10 ต.ค. ส่งตายาย 11 ต.ค.',conf:'gov',
+history:'เชื่อกันว่าในเดือน 10 บรรพบุรุษ (เปรต) ได้กลับมาหาลูกหลาน ลูกหลานจึงจัดหฺมฺรับทำบุญอุทิศให้ เพื่อแสดงความกตัญญู',
+steps:['รับตายาย','จัดหฺมฺรับ','แห่หฺมฺรับ','ตั้งเปรตและชิงเปรต','ส่งตายาย'],
+items:['ขนมพอง','ขนมลา','ขนมบ้า','ขนมดีซำ','ขนมไข่ปลา'],attire:'สุภาพ',
+dos:['ทำบุญอุทิศให้บรรพบุรุษ'],donts:['ระวังการเบียดเสียดตอนชิงเปรต'],foods:['ขนมประจำประเพณี 5 อย่าง'],
+src:['https://nakhonsithammarat.prd.go.th/th/content/category/detail/id/12/cid/9/iid/518335','https://thainews.prd.go.th/thainews/news/view/2146868/?bid=1']},
+{id:'jay',name:'ถือศีลกินผัก (กินเจ) ภูเก็ต',region:'ใต้',prov:'ภูเก็ต',type:'ประเพณีชาวไทยเชื้อสายจีน',s:'2026-10-10',e:'2026-10-18',when:'ขึ้น 1-9 ค่ำ เดือน 9 ปฏิทินจีน ปี 2569: 10-18 ต.ค. (ยกเสาโกเต้ง 9 ต.ค.)',conf:'gov',
+history:'ประเพณีของชาวไทยเชื้อสายจีนฮกเกี้ยน ถือศีล งดเนื้อสัตว์ ชำระกายใจ กรมส่งเสริมวัฒนธรรมประกาศขึ้นบัญชีเป็นมรดกภูมิปัญญาทางวัฒนธรรม พ.ศ. 2561',
+steps:['ยกเสาโกเต้ง','กินเจแต่งชุดขาว','ขบวนอิ้วเก้ง (แห่พระ)','พิธีม้าทรง','ส่งพระ'],
+items:['ชุดขาว','ธูป','ธงเหลือง'],attire:'ชุดขาวล้วน',
+dos:['งดเนื้อสัตว์ ถือศีลสะอาดกายใจ'],donts:['ไม่ขวางขบวน','ไม่ถ่ายภาพม้าทรงระยะประชิด','ระวังประทัด'],foods:['อาหารเจ'],
+src:['https://www.dailynews.co.th/news/6253434/','https://www.thansettakij.com/lifestyle/travel-shopping/670704']},
+{id:'ork',name:'วันออกพรรษา',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'วันพุทธ',s:'2026-10-26',e:'2026-10-26',when:'ปี 2569 จ. 26 ต.ค. (ขึ้น 15 ค่ำ เดือน 11 ไม่ใช่วันหยุดราชการ)',conf:'cal',
+history:'สิ้นสุดการจำพรรษา พระสงฆ์ทำปวารณา ตรงกับตำนานพระพุทธเจ้าเสด็จลงจากดาวดึงส์',
+steps:['ตักบาตรเทโว','ทำบุญฟังธรรม'],items:['ข้าวต้มลูกโยน','ข้าวต้มมัด'],attire:'สุภาพ',
+dos:['ร่วมทำบุญตักบาตร'],donts:['-'],foods:['ข้าวต้มลูกโยน','ข้าวต้มมัด'],
+src:['https://www.thansettakij.com/general-news/671746']},
+{id:'devo',name:'ตักบาตรเทโวโรหณะ อุทัยธานี',region:'กลาง',prov:'อุทัยธานี (วัดสังกัสรัตนคีรี)',type:'ประเพณีพื้นบ้าน',s:'2026-10-26',e:'2026-10-27',when:'แรม 1 ค่ำ เดือน 11 ปี 2569: ตักบาตร 27 ต.ค. (งาน 26-27 ต.ค.)',conf:'gov',
+history:'"เทโวโรหณะ" คือการเสด็จลงจากเทวโลกสู่เมืองสังกัสสะ ที่อุทัยธานีพระสงฆ์เดินลงบันได 449 ขั้นจากเขาสะแกกรัง ให้ประชาชนใส่บาตร',
+steps:['พระสงฆ์เดินลงบันได 449 ขั้น','ประชาชนใส่บาตรตามแนวทาง','ชมแสงสีเสียงคืนก่อนวันงาน'],
+items:['ข้าวต้มลูกโยน','อาหารแห้ง'],attire:'สุภาพ นิยมสีขาวหรือสีสุภาพ',
+dos:['ใส่บาตรอย่างสำรวม'],donts:['ไม่ยื้อแย่ง'],foods:['ข้าวต้มลูกโยน'],
+src:['https://siamrath.co.th/regional/330414','https://www.khaosod.co.th/around-thailand/news_9464787']},
+{id:'chakphra',name:'ชักพระ สุราษฎร์ธานี',region:'ใต้',prov:'สุราษฎร์ธานี',type:'ประเพณีพื้นบ้าน',s:'2026-10-23',e:'2026-10-31',when:'งานปี 2569 จัด 23-31 ต.ค. ที่สะพานนริศ วันชักพระ 27 ต.ค. (แรม 1 ค่ำ เดือน 11)',conf:'gov',
+history:'อัญเชิญพระพุทธรูปขึ้นบุษบกแห่แทนการเสด็จลงจากดาวดึงส์ ทางบกเรียก "นมพระ" ทางน้ำเรียก "เรือพระ" เชื่อว่าทำให้ฝนตกตามฤดูกาล',
+steps:['ตักบาตรหน้าล้อ','ชักพุ่มเมืองและพุ่มผ้าป่าหน้าบ้าน','ขบวนเรือพนมพระทางบกและทางน้ำ','แข่งเรือยาว'],
+items:['พุ่มผ้าป่า','บุษบกอัญเชิญพระ'],attire:'สุภาพ',
+dos:['ร่วมทำบุญและชมขบวน'],donts:['ระวังความปลอดภัยริมน้ำ'],foods:['"ต้ม" (ข้าวเหนียวห่อใบกะพ้อ)'],
+src:['https://www.culture.go.th/culture_th/ewt_news.php?nid=5285&filename=in','https://www.palangkhao.com/?p=24020']},
+{id:'kathin',name:'ประเพณีทอดกฐิน',region:'ทั่วประเทศ',prov:'ทุกจังหวัด',type:'ประเพณีพุทธ',s:'2026-10-27',e:'2026-11-24',when:'กฐินกาล แรม 1 ค่ำ เดือน 11 ถึงขึ้น 15 ค่ำ เดือน 12 ปี 2569: 27 ต.ค.-24 พ.ย.',conf:'cal',
+history:'ถวายผ้ากฐินแก่พระสงฆ์ที่จำพรรษาครบ ทำได้เฉพาะในกฐินกาล และแต่ละวัดรับได้ปีละครั้ง ถือเป็นกาลทาน (ข้อมูลส่วนนี้ยังควรตรวจเพิ่มกับ onab.go.th)',
+steps:['จองกฐิน','แห่องค์กฐิน','ถวายผ้ากฐิน','พระสงฆ์กรานกฐิน'],items:['ผ้าไตรกฐิน','เครื่องไทยธรรม'],attire:'สุภาพ',
+dos:['จองวัดล่วงหน้า'],donts:['-'],foods:['-'],
+src:['https://www.onab.go.th/']},
+{id:'loy',name:'ลอยกระทง',region:'ทั่วประเทศ',prov:'สุโขทัย, กรุงเทพฯ, ตาก และทั่วประเทศ',type:'ประเพณีพื้นบ้าน',s:'2026-11-24',e:'2026-11-24',when:'ปี 2569 อ. 24 พ.ย. (ขึ้น 15 ค่ำ เดือน 12)',conf:'cal',
+history:'ขอขมาพระแม่คงคาและบูชารอยพระพุทธบาท เรื่องนางนพมาศเป็นตำนานที่แต่งขึ้นในสมัยรัตนโกสินทร์ ไม่ใช่หลักฐานสมัยสุโขทัย ครม. เห็นชอบเมื่อ 27 มี.ค. 2568 ให้เสนอ "ประเพณีลอยกระทงในประเทศไทย" ต่อยูเนสโก (ยังไม่ได้ขึ้นทะเบียน)',
+steps:['ทำกระทง','จุดธูปเทียนอธิษฐาน','ลอยกระทงในน้ำ'],items:['กระทงย่อยสลายได้','ธูป 3 ดอก','เทียน 1 เล่ม'],attire:'ชุดไทย',
+dos:['ใช้กระทงจากวัสดุธรรมชาติ'],donts:['ไม่ใช้โฟม','ระวังพลุและการตกน้ำ'],foods:['อาหารริมทางและขนมไทย'],
+src:['https://www.pptvhd36.com/news/%E0%B9%84%E0%B8%A5%E0%B8%9F%E0%B9%8C%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%A5%E0%B9%8C/283924','https://www.thaipbs.or.th/news/content/350626']},
+{id:'yipeng',name:'ยี่เป็ง เชียงใหม่',region:'เหนือ',prov:'เชียงใหม่',type:'ประเพณีล้านนา',s:'2026-11-23',e:'2026-11-25',when:'เพ็ญเดือนยี่ล้านนา ปี 2569 เทศบาลนครเชียงใหม่จัด 23-25 พ.ย. คืนเพ็ญ 24 พ.ย.',conf:'gov',
+history:'"ยี่" แปลว่าสอง "เป็ง" แปลว่าเพ็ญ ชาวล้านนาจุดผางประทีปและแขวนโคมบูชาพระรัตนตรัย ปล่อยโคมเพื่อสะเดาะเคราะห์',
+steps:['ประดับโคมและผางประทีป','ตั้งธัมม์หลวง ฟังเทศน์มหาชาติ','ลอยกระทงแม่น้ำปิง','ชมขบวนกระทงใหญ่'],
+items:['โคมล้านนา','ผางประทีป','กระทง'],attire:'ชุดพื้นเมืองล้านนา',
+dos:['ร่วมพิธีทางศาสนาตามศรัทธา'],donts:['ห้ามปล่อยโคมนอกพื้นที่และเวลาที่อนุญาต'],foods:['ขันโตก','แคบหมู','น้ำพริกหนุ่ม'],
+src:['https://www.chiangmainews.co.th/news/chiangmai/4138857/','https://www.sanook.com/campus/910912/']}
+];
+const HOLIDAYS=[['2026-01-01','วันขึ้นปีใหม่'],['2026-01-02','วันหยุดพิเศษ (มติ ครม.)'],['2026-04-06','วันจักรี'],['2026-05-04','วันฉัตรมงคล'],['2026-06-03','วันเฉลิมพระชนมพรรษาสมเด็จพระราชินี'],['2026-06-01','ชดเชยวันวิสาขบูชา'],['2026-07-28','วันเฉลิมพระชนมพรรษาพระเจ้าอยู่หัว'],['2026-10-13','วันนวมินทรมหาราช'],['2026-10-23','วันปิยมหาราช'],['2026-12-05','วันพ่อแห่งชาติ'],['2026-12-07','ชดเชยวันพ่อ/วันชาติ'],['2026-12-10','วันรัฐธรรมนูญ'],['2026-12-31','วันสิ้นปี']];
+// วันพระปี 2569 เฉพาะที่ยืนยันจาก myhora.com (เดือนที่ว่างยังไม่ยืนยัน)
+const WANPRA={0:[3,11,18,26],1:[2,10,16,24],2:[3,11,18,26],3:[2,10,16,24],4:[1,9,16,24,31],5:[8,14,22],6:[29],8:[5,11,19,26],9:[26],10:[3,9,17,24]};
+const QUIZ=[
+['ยูเนสโกขึ้นทะเบียน "สงกรานต์ในประเทศไทย" เป็นมรดกภูมิปัญญาทางวัฒนธรรมในปี พ.ศ. ใด',['2561','2564','2566','2568'],2,'ขึ้นทะเบียนเมื่อ 6 ธ.ค. 2566'],
+['บุญบั้งไฟจัดเพื่อบูชาใครเพื่อขอฝน',['พญานาค','พญาแถน','พระแม่คงคา','พระอินทร์'],1,'ตามตำนานพญาคันคากรบชนะพญาแถน'],
+['ผีตาโขนเป็นประเพณีของจังหวัดใด',['เลย','ยโสธร','อุบลราชธานี','ร้อยเอ็ด'],0,'บุญหลวงที่ด่านซ้าย จ.เลย'],
+['วันมาฆบูชาระลึกถึงการประชุมของพระอรหันต์กี่รูป',['500','1,250','1,000','84,000'],1,'จาตุรงคสันนิบาต พระอรหันต์ 1,250 รูป'],
+['พระสงฆ์รูปแรกที่บวชในวันอาสาฬหบูชาคือรูปใด',['พระสารีบุตร','พระอานนท์','พระอัญญาโกณฑัญญะ','พระโมคคัลลานะ'],2,'พระอัญญาโกณฑัญญะ ทำให้พระรัตนตรัยครบองค์ 3'],
+['ผู้ร่วมกินเจที่ภูเก็ตนิยมแต่งกายด้วยสีใด',['แดง','ขาว','เหลือง','ดำ'],1,'นิยมชุดขาวล้วน'],
+['ประเพณีชักพระที่ภาคใต้จัดใหญ่ที่จังหวัดใดตามข้อมูลในแอป',['สุราษฎร์ธานี','ตรัง','สงขลา','ชุมพร'],0,'ที่สะพานนริศ สุราษฎร์ธานี'],
+['ตักบาตรเทโวที่วัดสังกัสรัตนคีรี พระสงฆ์เดินลงบันไดกี่ขั้น',['108','249','449','999'],2,'บันได 449 ขั้น จ.อุทัยธานี'],
+['คำว่า "เป็ง" ในคำว่า "ยี่เป็ง" แปลว่าอะไร',['วันเพ็ญ','น้ำ','ไฟ','ดอกไม้'],0,'ยี่ = สอง เป็ง = เพ็ญ'],
+['ดอกไม้สัญลักษณ์ของวันแม่แห่งชาติคือดอกอะไร',['กุหลาบ','มะลิ','ดาวเรือง','บัว'],1,'ดอกมะลิ'],
+['บุญสารทเดือนสิบจัดเพื่อทำบุญอุทิศให้ใคร',['เทพเจ้า','บรรพบุรุษ','พระสงฆ์','ผู้ประสบภัย'],1,'อุทิศให้บรรพบุรุษที่กลับมาเยี่ยม'],
+['วันเข้าพรรษาคือการที่พระสงฆ์จำพรรษาอยู่ประจำที่กี่เดือน',['1','2','3','4'],2,'3 เดือนในฤดูฝน']];
+
+const MONTHS=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const MS=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+const DOW=['อา','จ','อ','พ','พฤ','ศ','ส'];
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let fav=store.get('fav',[]),rem=store.get('rem',[]),best=store.get('best',null),big=store.get('big',false);
+const pd=s=>{const[a,b,c]=s.split('-').map(Number);return new Date(a,b-1,c)};
+const dstr=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const today=()=>{const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate())};
+const be=y=>y+543;
+const fmt=s=>{const d=pd(s);return d.getDate()+' '+MS[d.getMonth()]};
+const range=e=>e.s===e.e?fmt(e.s):fmt(e.s)+' - '+fmt(e.e);
+const days=(a,b)=>Math.round((a-b)/864e5);
+const evById=id=>EVENTS.find(e=>e.id===id);
+function toast(t){const x=$('#toast');x.textContent=t;x.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>x.classList.remove('show'),2200)}
+function seasonOf(m){return m>=2&&m<=4?'ฤดูร้อน':m>=5&&m<=10?'ฤดูฝน':'ฤดูหนาว'}
+function status(e){const t=today(),s=pd(e.s),f=pd(e.e);if(t>=s&&t<=f)return{k:'now',t:'กำลังจัด'};if(t<s){const n=days(s,t);return{k:'soon',t:n===1?'พรุ่งนี้':'อีก '+n+' วัน',n}}return{k:'past',t:'ผ่านไปแล้ว'}}
+function card(e){const st=status(e);const d=pd(e.s);
+ return `<div class="card list-item" data-open="${e.id}"><div class="datebox"><b>${d.getDate()}</b><span>${MS[d.getMonth()]}</span></div>
+ <div style="flex:1;min-width:0"><div class="li-name">${e.name}</div><div class="note">${range(e)} · ${e.prov}</div>
+ <div style="margin-top:4px"><span class="chip b">${e.region}</span><span class="chip">${e.type}</span><span class="chip ${st.k==='now'?'g':st.k==='soon'?'r':''}">${st.t}</span></div></div>
+ <button class="star" data-fav="${e.id}" aria-label="รายการโปรด">${fav.includes(e.id)?'★':'☆'}</button></div>`}
+/* ---------- router ---------- */
+let cur='home',prev='home';
+function go(v,push=true){cur=v;document.querySelectorAll('.view').forEach(x=>x.classList.remove('act'));$('#v-'+v).classList.add('act');
+ document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===(v==='detail'?prev:v)));
+ if(push&&v!=='detail')prev=v;
+ ({home:renderHome,cal:renderCal,list:renderList,quiz:renderQuizIntro,me:renderMe})[v]&&({home:renderHome,cal:renderCal,list:renderList,quiz:renderQuizIntro,me:renderMe})[v]();
+ window.scrollTo(0,0)}
+document.addEventListener('click',ev=>{
+ const f=ev.target.closest('[data-fav]');if(f){ev.stopPropagation();toggleFav(f.dataset.fav);return}
+ const o=ev.target.closest('[data-open]');if(o){openDetail(o.dataset.open);return}
+ const n=ev.target.closest('#nav button');if(n){go(n.dataset.v)}
+});
+function toggleFav(id){const i=fav.indexOf(id);if(i>=0){fav.splice(i,1);toast('นำออกจากรายการโปรดแล้ว')}else{fav.push(id);toast('เพิ่มในรายการโปรดแล้ว ⭐')}store.set('fav',fav);refreshStars()}
+function refreshStars(){document.querySelectorAll('[data-fav]').forEach(b=>b.textContent=fav.includes(b.dataset.fav)?'★':'☆');const fb=$('#favBtn');if(fb&&fb.dataset.id)fb.textContent=fav.includes(fb.dataset.id)?'★ อยู่ในรายการโปรด':'☆ เพิ่มในรายการโปรด';if(cur==='me')renderMe()}
+/* ---------- home ---------- */
+function renderHome(){
+ const t=today();const upcoming=EVENTS.filter(e=>pd(e.e)>=t).sort((a,b)=>pd(a.s)-pd(b.s));
+ const nowEv=upcoming.filter(e=>pd(e.s)<=t);const next=upcoming.find(e=>pd(e.s)>t);
+ let h='';
+ const due=rem.map(evById).filter(e=>e&&pd(e.e)>=t&&days(pd(e.s),t)<=7);
+ if(due.length)h+=`<div class="banner">🔔 ใกล้ถึงแล้ว: ${due.map(e=>`<a href="#" data-open="${e.id}">${e.name} (${status(e).t})</a>`).join(' · ')}</div>`;
+ if(t.getFullYear()!==2026)h+=`<div class="banner">ข้อมูลในแอปเป็นปี พ.ศ. 2569 (ค.ศ. 2026) ปีนี้ยังไม่มีข้อมูลที่ยืนยัน</div>`;
+ h+=`<div class="hero"><div class="note" style="color:#cdd3e4">วันนี้ ${t.getDate()} ${MONTHS[t.getMonth()]} ${be(t.getFullYear())}</div>`;
+ if(nowEv.length){h+=`<h2 style="margin-top:6px">กำลังจัดอยู่ตอนนี้</h2>`+nowEv.map(e=>`<div style="margin-top:8px"><a style="color:#fff;font-weight:700" href="#" data-open="${e.id}">▸ ${e.name}</a><div class="note" style="color:#cdd3e4">${range(e)} · ${e.prov}</div></div>`).join('')}
+ if(next){const n=days(pd(next.s),t);h+=`<h2 style="margin-top:14px">งานถัดไป</h2><div class="row" style="margin-top:6px;align-items:center"><div class="big">${n}</div><div style="flex:1"><div>วัน · <b>${next.name}</b></div><div class="note" style="color:#cdd3e4">${range(next)} · ${next.prov}</div></div></div><div class="row" style="margin-top:10px"><button class="btn gold" data-open="${next.id}">ดูรายละเอียด</button></div>`}
+ else if(!nowEv.length)h+=`<h2>ปีนี้ไม่มีงานเหลือแล้ว</h2>`;
+ h+=`</div>`;
+ h+=`<div class="sec-t">เมนูลัด</div><div class="cols">
+ <button class="btn line" onclick="go('cal')">📅 ปฏิทินวันสำคัญ</button><button class="btn line" onclick="go('list')">🏮 ประเพณีทั้งหมด (${EVENTS.length})</button>
+ <button class="btn line" onclick="go('quiz')">❓ ทดสอบความรู้</button><button class="btn line" onclick="go('me')">⭐ ของฉัน</button></div>`;
+ h+=`<div class="sec-t">งานที่กำลังมา</div>`+upcoming.slice(0,5).map(card).join('');
+ $('#v-home').innerHTML=h}
+/* ---------- calendar ---------- */
+let cm=(()=>{const n=new Date();return n.getFullYear()===2026?n.getMonth():0})(),csel=null;
+function renderCal(){
+ const first=new Date(2026,cm,1),n=new Date(2026,cm+1,0).getDate(),pad=first.getDay(),t=today();
+ let h=`<div class="cal-head"><button class="btn line" id="pm" ${cm===0?'disabled':''}>◀</button><h2>${MONTHS[cm]} ${be(2026)}</h2><button class="btn line" id="nm" ${cm===11?'disabled':''}>▶</button></div>`;
+ h+=`<div class="legend"><span><i class="dot ev"></i>ประเพณี</span><span><i class="dot hol"></i>วันหยุด</span><span><i class="dot wp"></i>วันพระ</span></div><div class="grid">`+DOW.map(d=>`<div class="dow">${d}</div>`).join('');
+ for(let i=0;i<pad;i++)h+='<div class="day empty"></div>';
+ for(let d=1;d<=n;d++){const ds=dstr(new Date(2026,cm,d));const evs=EVENTS.filter(e=>ds>=e.s&&ds<=e.e),hol=HOLIDAYS.filter(x=>x[0]===ds),wp=(WANPRA[cm]||[]).includes(d);const dow=(pad+d-1)%7;
+  h+=`<div class="day ${dow===0?'sun':''} ${dstr(t)===ds?'today':''} ${csel===ds?'sel':''}" data-d="${ds}">${d}<div class="dots">${evs.length?'<i class="dot ev"></i>':''}${hol.length?'<i class="dot hol"></i>':''}${wp?'<i class="dot wp"></i>':''}</div></div>`}
+ h+=`</div><div id="dayinfo" style="margin-top:12px"></div>`;
+ const miss=[0,1,2,3,4,5,8,10].includes(cm)?'':'<div class="note">เดือนนี้แสดงเฉพาะวันพระที่ยืนยันแล้ว (ข้อมูลวันพระบางวันยังไม่ครบ)</div>';
+ h+=miss;
+ h+=`<div class="sec-t">รายการในเดือนนี้</div>`;
+ const ms=EVENTS.filter(e=>{const a=pd(e.s),b=pd(e.e);return a<=new Date(2026,cm+1,0)&&b>=new Date(2026,cm,1)});
+ h+=ms.length?ms.map(card).join(''):'<div class="card note">ไม่มีประเพณีหลักในเดือนนี้ (ดูวันหยุดราชการด้านบน)</div>';
+ $('#v-cal').innerHTML=h;
+ $('#pm').onclick=()=>{cm--;csel=null;renderCal()};$('#nm').onclick=()=>{cm++;csel=null;renderCal()};
+ document.querySelectorAll('.day[data-d]').forEach(x=>x.onclick=()=>{csel=x.dataset.d;showDay()});
+ if(csel)showDay(true)}
+function showDay(keep){const ds=csel;document.querySelectorAll('.day').forEach(x=>x.classList.toggle('sel',x.dataset.d===ds));
+ const d=pd(ds);const evs=EVENTS.filter(e=>ds>=e.s&&ds<=e.e),hol=HOLIDAYS.filter(x=>x[0]===ds),wp=(WANPRA[d.getMonth()]||[]).includes(d.getDate());
+ let h=`<div class="card"><b>${d.getDate()} ${MONTHS[d.getMonth()]} ${be(2026)}</b>`;
+ if(wp)h+=`<div>🪷 วันพระ</div>`;hol.forEach(x=>h+=`<div class="no">🇹🇭 ${x[1]}</div>`);
+ if(!evs.length&&!hol.length&&!wp)h+=`<div class="note">ไม่มีรายการในวันนี้</div>`;
+ h+=`</div>`+evs.map(card).join('');$('#dayinfo').innerHTML=h}
+/* ---------- list / search / filters ---------- */
+let q='',reg='ทั้งหมด',mon='ทั้งหมด',sea='ทั้งหมด';
+function renderList(){
+ const regs=['ทั้งหมด','เหนือ','กลาง','อีสาน','ใต้','ทั่วประเทศ'];
+ let h=`<input type="search" id="q" placeholder="ค้นหาประเพณี จังหวัด หรืออาหาร..." value="${q}">
+ <div class="filters" id="fr">${regs.map(r=>`<button class="pill ${r===reg?'on':''}" data-r="${r}">${r}</button>`).join('')}</div>
+ <div class="row"><select id="mon" style="flex:1"><option>ทั้งหมด</option>${MONTHS.map((m,i)=>`<option value="${i}" ${String(mon)===String(i)?'selected':''}>${m}</option>`).join('')}</select>
+ <select id="sea" style="flex:1">${['ทั้งหมด','ฤดูร้อน','ฤดูฝน','ฤดูหนาว'].map(s=>`<option ${s===sea?'selected':''}>${s}</option>`).join('')}</select></div>
+ <div class="note" style="margin:8px 0" id="cnt"></div><div id="res"></div>`;
+ $('#v-list').innerHTML=h;
+ $('#q').oninput=e=>{q=e.target.value;draw()};
+ $('#fr').onclick=e=>{const b=e.target.closest('[data-r]');if(!b)return;reg=b.dataset.r;document.querySelectorAll('#fr .pill').forEach(x=>x.classList.toggle('on',x.dataset.r===reg));draw()};
+ $('#mon').onchange=e=>{mon=e.target.value;draw()};$('#sea').onchange=e=>{sea=e.target.value;draw()};
+ draw()}
+function draw(){
+ const k=q.trim().toLowerCase();
+ const r=EVENTS.filter(e=>{
+  if(reg!=='ทั้งหมด'&&e.region!==reg)return false;
+  if(mon!=='ทั้งหมด'){const m=+mon,a=pd(e.s),b=pd(e.e);if(!(a<=new Date(2026,m+1,0)&&b>=new Date(2026,m,1)))return false}
+  if(sea!=='ทั้งหมด'&&seasonOf(pd(e.s).getMonth()+1)!==sea)return false;
+  if(k){const hay=(e.name+e.prov+e.region+e.type+e.history+e.foods.join(' ')+e.items.join(' ')).toLowerCase();if(!hay.includes(k))return false}
+  return true}).sort((a,b)=>pd(a.s)-pd(b.s));
+ $('#cnt').textContent='พบ '+r.length+' รายการ';
+ $('#res').innerHTML=r.length?r.map(card).join(''):'<div class="card note">ไม่พบรายการที่ตรงกับเงื่อนไข ลองล้างตัวกรอง</div>'}
+/* ---------- detail ---------- */
+function openDetail(id){
+ const e=evById(id);if(!e)return;const st=status(e);const hasRem=rem.includes(id);
+ const L=a=>a&&a.length&&a[0]!=='-'?`<ul class="k">${a.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<span class="note">ไม่มีข้อมูลเฉพาะ</span>';
+ let h=`<button class="back" id="bk">◀ กลับ</button><div class="detail-h"><span class="chip b">${e.region}</span><span class="chip">${e.type}</span><span class="chip ${st.k==='now'?'g':st.k==='soon'?'r':''}">${st.t}</span>
+ <h2>${e.name}</h2><div>📅 ${range(e)} ${be(2026)}</div><div class="note" style="color:#cdd3e4">📍 ${e.prov}</div><div class="note" style="color:#cdd3e4;margin-top:4px">${e.when}</div>
+ <div class="note" style="color:#E8B841;margin-top:4px">${SRC_NOTE[e.conf]}</div>
+ <div class="row" style="margin-top:12px"><button class="btn gold" id="favBtn" data-id="${id}">${fav.includes(id)?'★ อยู่ในรายการโปรด':'☆ เพิ่มในรายการโปรด'}</button>
+ <button class="btn line" id="remBtn">${hasRem?'🔕 ยกเลิกเตือน':'🔔 ตั้งเตือน'}</button><button class="btn line" id="shBtn">📤 แชร์</button></div></div>
+ <details class="acc" open><summary>ประวัติและความหมาย</summary><div class="bd">${e.history}</div></details>
+ <details class="acc"><summary>ขั้นตอนพิธี/กิจกรรม</summary><div class="bd"><ol class="k">${e.steps.map(x=>`<li>${x}</li>`).join('')}</ol></div></details>
+ <details class="acc"><summary>ของไหว้/ของที่ต้องเตรียม</summary><div class="bd">${L(e.items)}</div></details>
+ <details class="acc"><summary>การแต่งกายที่เหมาะสม</summary><div class="bd">${e.attire}</div></details>
+ <details class="acc"><summary>ข้อควรทำ / ข้อควรระวัง</summary><div class="bd"><b class="ok">ควรทำ</b>${L(e.dos)}<b class="no" style="display:block;margin-top:8px">ควรระวัง</b>${L(e.donts)}</div></details>
+ <details class="acc"><summary>อาหารที่เกี่ยวข้อง</summary><div class="bd">${L(e.foods)}</div></details>
+ <details class="acc"><summary>แหล่งอ้างอิง</summary><div class="bd"><ul class="k">${e.src.map(u=>`<li><a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\//,'').slice(0,60)}</a></li>`).join('')}</ul></div></details>`;
+ $('#v-detail').innerHTML=h;go('detail',false);
+ $('#bk').onclick=()=>go(prev,false);
+ $('#favBtn').onclick=()=>toggleFav(id);
+ $('#remBtn').onclick=async()=>{const i=rem.indexOf(id);if(i>=0){rem.splice(i,1);toast('ยกเลิกการเตือนแล้ว')}else{rem.push(id);toast('ตั้งเตือนแล้ว จะแจ้งก่อนวันงาน 7 วัน');try{if('Notification' in window&&Notification.permission==='default')await Notification.requestPermission()}catch(x){}}store.set('rem',rem);openDetail(id)};
+ $('#shBtn').onclick=async()=>{const txt=`${e.name} · ${range(e)} ${be(2026)} · ${e.prov}\n${e.history.slice(0,120)}...`;
+  try{if(navigator.share){await navigator.share({title:e.name,text:txt,url:location.href.split('#')[0]});return}}catch(x){return}
+  try{await navigator.clipboard.writeText(txt+'\n'+location.href.split('#')[0]);toast('คัดลอกข้อความสำหรับแชร์แล้ว')}catch(x){prompt('คัดลอกข้อความนี้',txt)}}}
+/* ---------- quiz ---------- */
+let qz=null;
+function renderQuizIntro(){
+ $('#v-quiz').innerHTML=`<div class="hero"><h2>ทดสอบความรู้ประเพณีไทย</h2><p style="margin:6px 0 12px">สุ่ม 8 ข้อจากคลัง ${QUIZ.length} ข้อ ตอบแล้วรู้ผลทันที</p><button class="btn gold" id="qs">เริ่มทำแบบทดสอบ</button></div>
+ <div class="card">คะแนนสูงสุดของคุณ: <b>${best?best.s+'/'+best.n+' ('+best.d+')':'ยังไม่เคยทำ'}</b></div>`;
+ $('#qs').onclick=startQuiz}
+function startQuiz(){const idx=[...QUIZ.keys()].sort(()=>Math.random()-.5).slice(0,8);qz={idx,i:0,s:0,done:false};renderQ()}
+function renderQ(){
+ if(qz.i>=qz.idx.length){const d=new Date();const ds=d.getDate()+' '+MS[d.getMonth()];if(!best||qz.s>best.s){best={s:qz.s,n:qz.idx.length,d:ds};store.set('best',best)}
+  const p=qz.s/qz.idx.length;$('#v-quiz').innerHTML=`<div class="hero"><h2>ผลคะแนน</h2><div class="big" style="margin:8px 0">${qz.s}/${qz.idx.length}</div><p>${p>=.8?'ยอดเยี่ยม! คุณรู้จักประเพณีไทยดีมาก':p>=.5?'ทำได้ดี ลองอ่านรายละเอียดงานเพิ่มอีกนิด':'ลองอ่านรายละเอียดประเพณีแล้วกลับมาทำใหม่นะ'}</p><div class="row"><button class="btn gold" id="qa">ทำอีกครั้ง</button><button class="btn line" style="background:#fff" onclick="go('list')">ไปอ่านประเพณี</button></div></div><div class="card">คะแนนสูงสุด: <b>${best.s}/${best.n}</b></div>`;$('#qa').onclick=startQuiz;return}
+ const [qq,ch,ans,exp]=QUIZ[qz.idx[qz.i]];
+ $('#v-quiz').innerHTML=`<div class="note">ข้อ ${qz.i+1} จาก ${qz.idx.length} · คะแนน ${qz.s}</div><div class="prog"><i style="width:${qz.i/qz.idx.length*100}%"></i></div>
+ <div class="card"><h3 style="margin-bottom:8px">${qq}</h3>${ch.map((c,i)=>`<button class="q-opt" data-i="${i}">${c}</button>`).join('')}<div id="fb"></div></div>`;
+ document.querySelectorAll('.q-opt').forEach(b=>b.onclick=()=>{if(qz.done)return;qz.done=true;const i=+b.dataset.i;
+  document.querySelectorAll('.q-opt').forEach(x=>{if(+x.dataset.i===ans)x.classList.add('right')});
+  if(i===ans)qz.s++;else b.classList.add('wrong');
+  $('#fb').innerHTML=`<p><b class="${i===ans?'ok':'no'}">${i===ans?'ถูกต้อง!':'ยังไม่ถูก'}</b> ${exp}</p><button class="btn" id="nx">${qz.i+1>=qz.idx.length?'ดูผลคะแนน':'ข้อถัดไป'}</button>`;
+  $('#nx').onclick=()=>{qz.i++;qz.done=false;renderQ()}})}
+/* ---------- me ---------- */
+function renderMe(){
+ const f=fav.map(evById).filter(Boolean),r=rem.map(evById).filter(Boolean);
+ const perm=('Notification' in window)?Notification.permission:'unsupported';
+ $('#v-me').innerHTML=`<div class="sec-t">⭐ รายการโปรด (${f.length})</div>${f.length?f.map(card).join(''):'<div class="card note">ยังไม่มีรายการโปรด กดดาว ☆ ที่งานที่ชอบ</div>'}
+ <div class="sec-t">🔔 งานที่ตั้งเตือนไว้ (${r.length})</div>${r.length?r.map(e=>card(e)+`<div style="margin:-6px 0 12px"><button class="btn line" data-unrem="${e.id}">ยกเลิกเตือน ${e.name}</button></div>`).join(''):'<div class="card note">ยังไม่มีการเตือน เปิดหน้ารายละเอียดงานแล้วกด 🔔 ตั้งเตือน</div>'}
+ <div class="card note">การเตือน: แอปจะแสดงแถบแจ้งเตือนบนหน้าแรกเมื่องานใกล้ถึง (ภายใน 7 วัน) และแจ้งเตือนจากเบราว์เซอร์ถ้าอนุญาต (สถานะ: ${perm==='granted'?'อนุญาตแล้ว':perm==='denied'?'ถูกปิดไว้':perm==='unsupported'?'เบราว์เซอร์ไม่รองรับ':'ยังไม่ได้ขออนุญาต'})</div>`;
+ document.querySelectorAll('[data-unrem]').forEach(b=>b.onclick=()=>{rem=rem.filter(x=>x!==b.dataset.unrem);store.set('rem',rem);renderMe();toast('ยกเลิกการเตือนแล้ว')})}
+/* ---------- font size ---------- */
+function applyBig(){document.body.classList.toggle('big',big);const b=$('#fontBtn');b.classList.toggle('on',big);b.setAttribute('aria-pressed',big)}
+$('#fontBtn').onclick=()=>{big=!big;store.set('big',big);applyBig();toast(big?'เปิดโหมดตัวอักษรใหญ่':'กลับเป็นตัวอักษรปกติ')};
+applyBig();
+/* ---------- browser notification on open ---------- */
+function notifyDue(){try{if(!('Notification' in window)||Notification.permission!=='granted')return;const t=today();rem.map(evById).filter(e=>e&&pd(e.e)>=t&&days(pd(e.s),t)<=7).forEach(e=>new Notification('ใกล้ถึงงาน: '+e.name,{body:status(e).t+' · '+range(e)}))}catch(x){}}
+renderHome();notifyDue();
+</script>
+</body>
+</html>
