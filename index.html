@@ -14,8 +14,8 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{font-size:var(--fs)}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:'Sarabun',system-ui,sans-serif;line-height:1.6;padding-bottom:84px}
-body.big{--fs:19px}
-h1,h2,h3{font-family:'Noto Serif Thai',serif;margin:0;line-height:1.35}
+html.bigtext{--fs:20px}
+ h1,h2,h3{font-family:'Noto Serif Thai',serif;margin:0;line-height:1.35}
 .lai{height:14px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M14 1l5 6-5 6-5-6z' fill='none' stroke='%23E8B841' stroke-width='1.3'/%3E%3Cpath d='M0 7h4M24 7h4' stroke='%23E8B841' stroke-width='1.3'/%3E%3Ccircle cx='14' cy='7' r='1.4' fill='%23E8B841'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center}
 header{background:var(--indigo);color:#fff;position:sticky;top:0;z-index:20;padding:calc(10px + env(safe-area-inset-top)) 16px 0}
 .top{display:flex;align-items:center;gap:10px;max-width:960px;margin:0 auto;padding-bottom:8px}
@@ -402,7 +402,7 @@ function renderMe(){
  <div class="card note">การเตือน: แอปจะแสดงแถบแจ้งเตือนบนหน้าแรกเมื่องานใกล้ถึง (ภายใน 7 วัน) และแจ้งเตือนจากเบราว์เซอร์ถ้าอนุญาต (สถานะ: ${perm==='granted'?'อนุญาตแล้ว':perm==='denied'?'ถูกปิดไว้':perm==='unsupported'?'เบราว์เซอร์ไม่รองรับ':'ยังไม่ได้ขออนุญาต'})</div>`;
  document.querySelectorAll('[data-unrem]').forEach(b=>b.onclick=()=>{rem=rem.filter(x=>x!==b.dataset.unrem);store.set('rem',rem);renderMe();toast('ยกเลิกการเตือนแล้ว')})}
 /* ---------- font size ---------- */
-function applyBig(){document.body.classList.toggle('big',big);const b=$('#fontBtn');b.classList.toggle('on',big);b.setAttribute('aria-pressed',big)}
+function applyBig(){document.documentElement.classList.toggle('bigtext',big);const b=$('#fontBtn');b.classList.toggle('on',big);b.setAttribute('aria-pressed',big)}
 $('#fontBtn').onclick=()=>{big=!big;store.set('big',big);applyBig();toast(big?'เปิดโหมดตัวอักษรใหญ่':'กลับเป็นตัวอักษรปกติ')};
 applyBig();
 /* ---------- browser notification on open ---------- */
